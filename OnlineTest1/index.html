@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="jquery.mobile-1.4.5/images"></script>
+<link rel="stylesheet" type="text/css" href="jquery-mobile-theme-025533-0/themes/themeroller.css">
+<script src="jquery.js"></script>
+<script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="script.js"></script>
+</head>
+	<body>
+
+		<form data-role="page" id="login" data-theme="c">
+			<center><H1>LOGIN PAGE</H1></center>
+			<center><p><span id="rep"></span></p></center>
+			<input type="text" placeholder="Enter Username" id="usname">
+			<input type="password" placeholder="Enter Password" id="passwd">
+			<center><div data-role="controlgroup" data-type="horizontal">
+			<a href="" data-role="button" id="logo" data-icon="user" data-iconpos="left" onclick="validate()"> LOGIN</a>
+			<a href="" data-role="button" id="out" data-icon="delete" data-iconpos="right"> LOG OUT</a></center>
+			</div>
+		</form>
+
+
+	<div data-role="page" id="pageone" data-theme="b">
+	<div data-role="header" data-theme="c">
+	<h1>WELCOME TO ASHESI METER MGT</h1>
+	</div>
+	<!---->
+
+	<!---->
+	<div data-role="header" data-theme="a">
+	<a href="#" data-role="button" id="home" data-icon="home" data-iconpos="left">HOME</a>
+	<h1>METER READER</h1>
+	<a href="" data-role="button" id="logout" data-icon="back" data-iconpos="right">SWITCH USER</a>
+	</div>
+	<!---->
+	<center><div data-role="controlgroup" data-type="horizontal">
+	<a href="demo.html" data-role="button" data-icon="plus" data-iconpos="left" data-rel="dialog" data-transition="pop">ADD RECORD</a>
+	<a href="update.html#upda" data-role="button" data-icon="edit" data-iconpos="left" data-rel="dialog" data-transition="slidedown">UPDATE RECORD</a>
+	<a href="" data-role="button" data-icon="minus" id="del" data-iconpos="right" data-rel="dialog" data-transition="flip">DELETE RECORD</a>
+	<a href="" data-role="button" data-icon="refresh" id="refre" data-iconpos="right">REFRESH PAGE</a>
+	</div>
+	<!-- <fieldset>
+	<input type="search" name="look" id="look" value="" data-mini="true" placeholder="enter SerieNo." onkeyup="search(this.value)">
+	</fieldset> -->
+	<div>
+	<p><span id="res" name="res"></span></p>
+	</div>
+	</center>
+	<!---->
+	
+
+	<!---->
+	<div role="main" class="ui-content">
+		<ul id="myid" data-role="listview" data-inset="true" data-filter="true">
+			
+		</ul>
+		
+	</div>
+
+
+	<div data-role="footer" data-theme="b">
+		<h1>Developed by IPGS</h1>
+	</div>
+	</div>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		getList();
+	});
+	</script>
+	</body>
+	
+</html>

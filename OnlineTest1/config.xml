@@ -1,0 +1,17 @@
+<?xml version="1.2" encoding="UTF-8"?>
+	<widget xmlns 	="http://www.w3.org/ns/widgets"
+		xmlns:gap 	="http://phonegap.com/ns/1.0"
+		id        	="com.phonegap.example"
+		versionCode ="15"
+		version     ="1.0.6" >
+
+
+	<name>PhoneGap Example</name>
+	<description>
+		My first Example in phoneGap
+	</description>
+	<author href="https://ashesi.edu.gh" email="danielosei100@gmail.com">
+		Daniel Osei
+	</author>
+	<icon src="icon.png"/><gap:splash src="splash.png"/>
+</widget>

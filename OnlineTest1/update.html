@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html >
+<head>
+ <link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="jquery-mobile-theme-025533-0/themes/themeroller.css">
+<script src="script.js"></script>
+<script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body hight="300" width="250" align="center" bgColor="pink"><center>
+<div data-role="page" id="upg" data-theme="c">
+<div data-role="header">
+<h1>UPDATE RECORD</h1>
+</div>
+<div role="main" class="ui-content">
+<select id="selector" onchange="upda(value)">
+	<option>Select Meter to Edit Value Recorded</option>
+
+</select>
+</div>
+<div data-role="footer" data-theme="b">
+<h1>Developed by IPGS</h1>
+</div></center>
+</div>
+<div data-role="page" id="upga1" data-theme="c">
+<div data-role="header">
+<h1>UPDATE RECORD</h1>
+</div>
+
+<div role="main" class="ui-content">
+	<div>Result: <p><span id="inu"></span></p></div>
+	<center>
+<form method="POST" action="#">
+	<div><input type="number" id="n" placeholder="enter meter number" value="" readonly></div><br>
+	<div><input type="number" id="v" placeholder="Enter New value" value=""></div><br><br>
+	<div><input type="button" id=="up" onclick="updateDone()" value="SAVE UPDATE"></div>
+	<br>
+</form>
+</center>
+</div>
+</div>
+<center>
+<div data-role="footer" data-theme="b">
+<h1>Developed by IPGS</h1>
+</div></center>
+<script type="text/javascript">
+	$(document).ready(function(){
+		update();
+	});
+	</script>
+</body>
+</html>

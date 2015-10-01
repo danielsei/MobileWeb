@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html >
+<head>
+ <link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="jquery-mobile-theme-025533-0/themes/themeroller.css">
+<script src="script.js"></script>
+<script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body hight="300" width="250" align="center" bgColor="pink"><center>
+<div data-role="page" id="pagen" data-theme="c">
+<div data-role="header">
+<h1>INPUT</h1>
+</div>
+<!---->
+<div data-role="header">
+<a href="#" data-role="button" data-icon"home" data-iconpos="left">Home</a>
+
+<a href="#" data-role="button" data-icon="search" data-iconpos="right">Search</a>
+</div>
+<!---->
+
+<div role="main" class="ui-content">
+
+<div>Result: <p><span id="in"></span></p></div>
+<center>
+<form method="POST" action="#">
+	<div><input type="number" id="no1" placeholder="enter meter number"></div><br>
+	<div><input type="number" id="valu" placeholder="value recorded"></div><br>
+	<fieldset data-role="controlgroup">
+	<legend>Meter State:</legend>
+	<input type="radio" name="state" id="state2" value="Dirty">
+	<label for="state2">Dirty</label>
+	<input type="radio" name="state" id="state3" value="Moderate">
+	<label for="state3">Moderate</label>
+	<input type="radio" name="state" id="state4" value="Neat">
+	<label for="state4">Neat</label>
+</fieldset>
+
+<fieldset data-role="controlgroup">
+	<legend>Meter Dos:</legend>
+	<input type="checkbox" name="need" id="need1" value="readable">
+	<label for="need1">Readable</label>
+	<input type="checkbox" name="need" id="need2" value="submitable">
+	<label for="need2">Submitable</label>
+	<input type="checkbox" name="need" id="need3" value="delivable">
+	<label for="need3">Delivable</label>
+</fieldset>
+<b><br>
+	<div><input type="button" id=="addme" onclick="addValue()" value="ADD"></div>
+	<br>
+</form>
+	
+</center>
+</div>
+</div>
+<div data-role="footer" data-theme="b">
+<h1>Developed by IPGS</h1>
+</div></center>
+</div>
+</body>
+</html>
